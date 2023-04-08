@@ -1,168 +1,226 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 #body{
-    background-color: #000000;
+  background-color: #000000;
 }
 .active{
-  background-color: #322e2e;
-  border-radius: 2rem;
+background-color: #322e2e;
+border-radius: 2rem;
 }
 .navs{
-    font-size: 20px;
-    margin-bottom: 5px;
-    font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 100;
 }
 .navIcons{
-    font-size: 18px;
-    margin-right: 15px;
-    margin-left: 12px;
-    font-weight: bolder;
+  font-size: 18px;
+  margin-right: 15px;
+  margin-left: 12px;
+  font-weight: bolder;
 }
 .navItems:last-child{
-  position: absolute;
-  bottom: 30px;
-  width: 80%;
+position: absolute;
+bottom: 30px;
+width: 80%;
 }
 .navItems{
-    cursor: pointer;
-    margin-top: 13px;
+  cursor: pointer;
+  margin-top: 13px;
 }
 .navItems:hover,
 .navItems:active{
-    background-color: #121212;
-    border-radius: 2rem;
-    
+  background-color: #121212;
+  border-radius: 2rem;
+  
 }
 .sidebar {
-  border-right: 1px solid #383838;
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 250px;
-  height: 100%;
-	background-color: #000000;
+border-right: 1px solid #383838;
+position: fixed;
+left: 0;
+top: 0;
+bottom: 0;
+width: 250px;
+height: 100%;
+background-color: #000000;
+}
+.sidebar .navigation ul {
+list-style: none;
+margin-top: 20px;
+margin-left: -30px;
+}
+.sidebar .navigation ul li {
+padding: 10px 0px;
+  color: #b3b3b3;
+text-decoration: none;
+font-weight: bold;
+font-size: 13px;
+}
+.sidebar .navigation ul li a {
+color: #b3b3b3;
+text-decoration: none;
+font-weight: bold;
+font-size: 13px;
+}
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+color: #ffffff;
+}
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa {
+color: #b3b3b3;
+}
+.sidebar .navigation ul li .fa {
+font-size: 20px;
+margin-right: 10px;
+}
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:hover .fa:active,
+.sidebar .navigation ul li a:hover .fa:focus {
+color: #ffffff;
+}
+.sidebar .policies {
+margin-left: -30px;
+position: absolute;
+bottom: 100px;
+}
+.main-container {
+  margin-left: 255px;
+  margin-bottom: 100px;
   }
-  .sidebar .navigation ul {
-	list-style: none;
-	margin-top: 20px;
-	margin-left: -30px;
-  }
-  .sidebar .navigation ul li {
-	padding: 10px 0px;
-  	color: #b3b3b3;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 13px;
-  }
-  .sidebar .navigation ul li a {
-	color: #b3b3b3;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 13px;
-  }
-  .sidebar .navigation ul li a:hover,
-  .sidebar .navigation ul li a:active,
-  .sidebar .navigation ul li a:focus {
-	color: #ffffff;
-  }
-  .sidebar .navigation ul li a:hover .fa,
-  .sidebar .navigation ul li a:active .fa,
-  .sidebar .navigation ul li a:focus .fa {
-	color: #b3b3b3;
-  }
-  .sidebar .navigation ul li .fa {
-	font-size: 20px;
-	margin-right: 10px;
-  }
-  .sidebar .navigation ul li a:hover .fa:hover,
-  .sidebar .navigation ul li a:hover .fa:active,
-  .sidebar .navigation ul li a:hover .fa:focus {
-	color: #ffffff;
-  }
-  .sidebar .policies {
-	margin-left: -30px;
-	position: absolute;
-	bottom: 100px;
-  }
-  .main-container {
-    margin-left: 255px;
-    margin-bottom: 100px;
-    }
-  .sidebar .policies ul {
-	list-style: none;
-  }
-  .sidebar .policies ul li {
-	padding-bottom: 5px;
-	margin-top: 30px;
-  }
-  .sidebar .policies ul li a {
-	color: #b3b3b3;
-	font-weight: 500;
-	text-decoration: none;
-	font-size: 10px;
-  }     
-  .settingsTab{
-    background-color: #262626;
-    border: 1px solid #262626;
-    border-radius: 1rem;
-    position: absolute;
-    bottom: 85px;
-    width: 80%;
-  }
-  .settingsTab li{
-    margin-left: 20px;
-  }
-  .settingsTab li:last-child{
-    margin-bottom: 20px;
-  }
-  .post{
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-  }
-  .postOwnerName{
-    cursor: pointer;
-    margin-left: 10px ;
-  }
-  .card{
-    width: 30rem ;
-    border:1px solid #fff
-  }
-  .navForPost{
-    display: flex;
-    align-items: center;
-    margin: 8px;
-  }
-  .navForPost img{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    object-fit: cover;
-  }
-  .settingsForPost{
-    position: absolute;
-    cursor: pointer;
-    right: 15px;
-  }
-  .actions{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 0;
-  }
-  .actions .left i{
-    cursor: pointer;
-    font-size: 25px;
-    margin-right: 7px;
-  }
-  .actions .right i{
-    cursor: pointer;
-    font-size: 25px;
-  }
-  .activeForLike{
-    color: red;
-  }
+.sidebar .policies ul {
+list-style: none;
+}
+.sidebar .policies ul li {
+padding-bottom: 5px;
+margin-top: 30px;
+}
+.sidebar .policies ul li a {
+color: #b3b3b3;
+font-weight: 500;
+text-decoration: none;
+font-size: 10px;
+}     
+.settingsTab{
+  background-color: #262626;
+  border: 1px solid #262626;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 85px;
+  width: 80%;
+}
+.settingsTab li{
+  margin-left: 20px;
+}
+.settingsTab li:last-child{
+  margin-bottom: 20px;
+}
+.post{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.postOwnerName{
+  cursor: pointer;
+  margin-left: 10px ;
+}
+.card{
+  width: 30rem ;
+  border:1px solid #fff
+}
+.navForPost{
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  border-bottom: 1px solid #383838;
+}
+.navForPostComment{
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  font-weight: 100;
+}
+.navForPostComment img{
+  width: 40px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.navForPost img{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.settingsForPost{
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+}
+.actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.actions .left i{
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 7px;
+}
+.actions .right i{
+  cursor: pointer;
+  font-size: 25px;
+}
+.activeForLike{
+  color: red;
+}
+.post input:active{
+  outline: none;
+}
+.addComment{
+  display: flex;
+  align-items: center;
+}
+.addComment i{
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+}
+.comments{
+  height: 45vh;
+  overflow-y: scroll;
+}
+.comments::-webkit-scrollbar{
+  display: none;
+}
+.modalArea{
+  height: 80vh;
+  background-color: #000000 !important;
+  border: 1px solid #322e2e !important;
+}
+.modalArea .leftPostSide img{
+position: absolute;
+left: 25%;
+top: 50%;
+transform: translate(-50%,-50%);
+width: 45%;
+}
+.modalArea .leftPostSide video{
+position: absolute;
+  width: 49%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  height: 80vh;
+}
+.actionsAndAddComments{
+border-top: 1px solid #383838;
+position: absolute;
+  bottom: 7px;
+  width: 47%;
+}
