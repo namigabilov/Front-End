@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+#body{
     background-color: #000000;
 }
 .active{
@@ -21,6 +21,11 @@ body{
     margin-left: 12px;
     font-weight: bolder;
 }
+.navItems:last-child{
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+}
 .navItems{
     cursor: pointer;
     margin-top: 13px;
@@ -32,13 +37,14 @@ body{
     
 }
 .sidebar {
+  border-right: 1px solid #383838;
 	position: fixed;
 	left: 0;
 	top: 0;
 	bottom: 0;
 	width: 250px;
+  height: 100%;
 	background-color: #000000;
-	padding: 24px;
   }
   .sidebar .navigation ul {
 	list-style: none;
@@ -47,6 +53,10 @@ body{
   }
   .sidebar .navigation ul li {
 	padding: 10px 0px;
+  	color: #b3b3b3;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
   }
   .sidebar .navigation ul li a {
 	color: #b3b3b3;
@@ -78,6 +88,10 @@ body{
 	position: absolute;
 	bottom: 100px;
   }
+  .main-container {
+    margin-left: 255px;
+    margin-bottom: 100px;
+    }
   .sidebar .policies ul {
 	list-style: none;
   }
@@ -91,3 +105,64 @@ body{
 	text-decoration: none;
 	font-size: 10px;
   }     
+  .settingsTab{
+    background-color: #262626;
+    border: 1px solid #262626;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 85px;
+    width: 80%;
+  }
+  .settingsTab li{
+    margin-left: 20px;
+  }
+  .settingsTab li:last-child{
+    margin-bottom: 20px;
+  }
+  .post{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .postOwnerName{
+    cursor: pointer;
+    margin-left: 10px ;
+  }
+  .card{
+    width: 30rem ;
+    border:1px solid #fff
+  }
+  .navForPost{
+    display: flex;
+    align-items: center;
+    margin: 8px;
+  }
+  .navForPost img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  .settingsForPost{
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+  }
+  .actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .actions .left i{
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 7px;
+  }
+  .actions .right i{
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .activeForLike{
+    color: red;
+  }
