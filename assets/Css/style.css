@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 #body{
   background-color: #000000;
@@ -10,6 +11,88 @@
 background-color: #322e2e;
 border-radius: 2rem;
 }
+@media screen and (max-width: 576px) {
+  .mobileHome{
+    display: block;
+  }
+ .desktop{
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  .mobileHome{
+    display: none;
+  }
+  .desktop{
+    display: block;
+  }
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 1px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+.mobileHome .navbarMobile {
+  display: flex;
+  justify-content: space-between;
+}
+.mobileHome .navbarMobile .messages{
+  cursor: pointer;
+}
+.mobileHome .navbarMobile i {
+  color: #fff;
+  font-size: 24px;
+}
+.mobileHome .navbarMobile{
+  margin: 12px 18px;
+}
+.mobileHome .navbarMobile .messageCount{
+    color: #fff;
+    background-color: red;
+    border-radius: 15px;
+    padding: 0px 5px;
+    position: absolute;
+    right: 22px;
+    top: 6px;
+    font-size: 10px;
+}
+.nav-item{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.nav-item span{
+  width: 0;
+  overflow: hidden;
+}
+
+.nav-item:focus{
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: .2s;
+}
+
+.nav-item:focus span{
+  width: 100%;
+  margin-left: 8px;
+  transition: .2s;
+}
+
+*:focus{
+  outline: none;
+  border: none;
+} 
 .navs{
   font-size: 20px;
   margin-bottom: 5px;
@@ -103,6 +186,7 @@ list-style: none;
 padding-bottom: 5px;
 margin-top: 30px;
 }
+
 .sidebar .policies ul li a {
 color: #b3b3b3;
 font-weight: 500;
@@ -141,6 +225,19 @@ font-size: 10px;
   align-items: center;
   margin: 8px;
   border-bottom: 1px solid #383838;
+}
+.navForSug{
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.navForSug img{
+  width: 40px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
 }
 .navForPostComment{
   display: flex;
@@ -190,10 +287,11 @@ font-size: 10px;
   display: flex;
   align-items: center;
 }
-.addComment i{
+.addComment button{
   position: absolute;
-  right: 25px;
+  right: 10px;
   cursor: pointer;
+  padding: 8px 10px;
 }
 .comments{
   height: 45vh;
@@ -234,8 +332,8 @@ position: absolute;
 }
 .reels-content img{
   cursor: pointer;
-  width: 300px;
-  height: 300px;
+  width: 318px;
+  height: 318px;
 }
 .forReelsImage{
   position: relative;
@@ -263,4 +361,35 @@ position: absolute;
 .reels-content .katman:hover{
   cursor:  pointer;
   opacity: 1;
+}
+.myProfile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+.myProfile .left{
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.myProfile .left img{
+  width: 50px;
+  border-radius: 2rem;
+}
+.myProfile .left .detail a{
+  color: #fff;
+}
+.myProfile .left .detail{
+  margin-left: 10px;
+}
+.sug{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+.suggestions a{
+  text-decoration: none;
 }

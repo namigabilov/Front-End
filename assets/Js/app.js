@@ -29,3 +29,6 @@ $( document ).ready(function() {
   });
   $("#myModal").modal('show');
 });
+feather.replace();
+
+document.querySelector(".nav-item").focus();
