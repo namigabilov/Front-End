@@ -393,3 +393,8 @@ position: absolute;
 .suggestions a{
   text-decoration: none;
 }
+.postReel{
+  overflow: hidden;
+  height: 20vh;
+  object-fit: cover;
+}
