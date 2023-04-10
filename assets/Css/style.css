@@ -242,6 +242,7 @@ font-size: 10px;
 .navForPostComment{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 8px;
   font-weight: 100;
 }
@@ -261,6 +262,12 @@ font-size: 10px;
   position: absolute;
   cursor: pointer;
   right: 15px;
+}
+.mobileHome .nav-item img{
+  width: 30px;
+  border-radius: 15px;
+  padding: 2px;
+  border: 2px solid #fff;
 }
 .actions{
   display: flex;
