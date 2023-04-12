@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 *{
   padding: 0;
   margin: 0;
@@ -6,6 +7,7 @@
 }
 #body{
   background-color: #000000;
+  font-family: "Montserrat", sans-serif;
 }
 .active{
 background-color: #322e2e;
@@ -41,7 +43,7 @@ nav{
   display: flex;
   justify-content: space-between;
 }
-.mobileHome .navbarMobile .messages{
+.mobileHome .navbarMobile .messagesIndex{
   cursor: pointer;
 }
 .mobileHome .navbarMobile i {
@@ -404,4 +406,229 @@ position: absolute;
   overflow: hidden;
   height: 20vh;
   object-fit: cover;
+}
+.profile img{
+  width: 5rem;
+  border-radius: 5rem;
+}
+.profile hr{
+  max-width: 100%;
+}
+.profile .right .top {
+  margin-bottom:8px ;
+}
+.profile .right button{
+  padding: 5px 40px;
+}
+.profile .right i{
+  cursor: pointer;
+  margin-left: 14px;
+}
+body{
+  overflow-x: hidden;
+}
+.profileMain .posts img{
+  height: 15vh;
+}
+.cycle-tab-container {
+  margin: 30px auto;
+  width: 800px;
+  padding: 20px;
+  box-shadow: 0 0 10px 2px #ddd;
+}
+
+.cycle-tab-container a {
+  color: #173649;
+  font-size: 16px;
+  font-family: roboto;
+  text-align: center;
+}
+
+.tab-pane {
+    text-align: center;
+    height: 100px !important;
+    margin: 30px auto;
+    width: 500px;
+    max-width: 100%;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+}
+
+.fade.active {
+  opacity: 1;
+}
+
+.cycle-tab-item {
+  width: 180px;
+}
+
+.cycle-tab-item:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px orange;  
+  transform: scaleX(0);  
+  transition: transform 0ms ease-out;
+}
+.cycle-tab-item.active:after { 
+  transform: scaleX(1);
+  transform-origin:  0% 50%; 
+  transition: transform 5000ms ease-in;
+}
+
+
+.nav-link:focus,
+.nav-link:hover,
+.cycle-tab-item.active a {
+  border-color: transparent !important;
+  color: orange;
+}
+.profileMain .profilePost img{
+  width: 100%;
+  height: 17vh;
+  object-fit: cover;
+  padding: 1px;
+}
+
+@media (max-width: 1000px) {
+  body, html {
+    font-size: 15px;
+  }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  padding: 50px 20%;
+}
+
+.chat {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: 680px) {
+  .wrapper {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+@media (max-height: 680px) {
+  .wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .chat {
+    gap: 10px;
+  }
+}
+.input {
+  width: 100%;
+  font: inherit;
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background 200ms;
+}
+.input:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.messages {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  padding: 10px;
+  scrollbar-width: 5px;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+.messages::-webkit-scrollbar {
+  width: 5px;
+}
+.messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+.messages::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.messages::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+.messages::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.message {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 25px;
+  max-width: 80%;
+  width: fit-content;
+}
+.mobileHome .chatAll{
+  align-items: center;
+  justify-content: space-between;
+}
+.mobileHome .chatAll .right i{
+  cursor: pointer;
+  font-size: 20px;
+}
+.message.self {
+  margin-left: auto;
+  background: rgba(255, 255, 255, 0.08);
+  --dir: 1 !important;
+}
+.write{
+  width: 80%;
+  position: fixed;
+  bottom: 10px ;
+}
+.animate {
+  --dir: -1;
+  animation: message 100ms;
+  z-index: 1;
+}
+
+@keyframes message {
+  from {
+    transform: translate(calc(var(--dir) * 200%), 300px) scale(0);
+  }
+  to {
+    transform: translate(0, 0) scale(1);
+  }
+}
+.reelsMobile .postReel{
+  padding: 2px;
+  padding-right: 0px;
+}
+.reelsMobile .postReel img{
+  width: 100%;
+  height: 20vh;
+  object-fit: fill;
 }
