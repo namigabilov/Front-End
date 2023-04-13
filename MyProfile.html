@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="assets/Css/style.css">
     <link rel="stylesheet" href="assets/Css/bootstrap.css">
     <link rel="shortcut icon" href="assets/Photos/Logo/instagram-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Instagram</title>
 </head>
-<body style="overflow-y: auto;" id="body"> 
+<body id="body"> 
     <div class="desktop">
         <div class="sidebar">
             <div class="my-4">
@@ -99,42 +98,94 @@
               </ul>
             </div>
         </div>
-        
     </div>
     <div class="mobileHome">
-       <div class="chatMainPage">
-        <div style="z-index: 99;" class="container d-flex chatAll">
-            <div class="left d-flex">
-              <a href="direct.html">
-                  <div style="margin-top: 30px;" class=" text-light mx-3">
-                      <i style="font-size: 23px; " class="fa-solid fa-arrow-left "></i>
-                  </div>
-              </a>
-              <a href="">
-                  <div class="navForPostComment">
-                      <img src="assets/Photos/ProfilePhotos/download (2).jpg" alt="">
-                      <a style="text-decoration: none; color: #fff;" href="profile.html">
-                          <span class="postOwnerName">MuradAliyev - <span style="color: green;">Is Online</span></span>
-                      </a>
-                  </div>
-              </a>
+        <nav>
+            <a class="nav-item" href="index.html">
+                <i class="fa-solid fa-house"></i><span>Home</span>
+            </a>
+            
+            <a class="nav-item" href="reels.html">
+                <i class="fa-solid fa-magnifying-glass"></i><span>Activity</span>
+            </a>
+            
+            <a class="nav-item" href="#">
+                <i class="fa-solid fa-plus"></i><span>New Post</span>
+            </a>
+
+            <a class="nav-item" href="activty.html">
+                <i class="fa-regular fa-heart"></i><span>Nofications</span>
+            </a>
+            
+            <a class="nav-item" href="profile.html">
+                <img src="assets/Photos/ProfilePhotos/download.jpg" alt=""><span>Profile</span>
+            </a>
+        </nav>
+        <div class="profileMain">
+            <div class="profile m-4">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="assets/Photos/ProfilePhotos/Photo.JPG" alt="">
+                    </div>
+                    <div class="col-9 right">
+                       <div class="top">
+                        <h3 class="text-light" style="display: inline;">UserName</h3>
+                        <i class="fa-solid fa-gear text-light" style="font-size: 20px;"></i>
+                       </div>
+                       <div class="bottom">
+                        <button class="btn btn-light">Edit Profile</button>
+                       </div>
+                    </div>
+                </div>
+                <div class="biography text-light my-4">
+                    <h5>Name Surname</h5>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatum voluptate fuga alias saepe pariatur numquam consectetur quis aperiam labore autem, esse dicta, nihil dolorum. Tempora fugit blanditiis beatae perferendis.</span>
+                </div>
+            </div><hr class=" text-light">
+            <div class="row text-center text-light">
+                <div class="col-4">9 Post</div>
+                <div class="col-4">100 Followers</div>
+                <div class="col-4">100 Following</div>
             </div>
-            <div class="right text-light ">
-              <i class="fa-solid fa-video mx-3"></i>
-              <i class="fa-solid fa-phone"></i>
+            <hr class=" text-light">
+            <div class="row text-light text-center">
+                <div style="border-right: 1px solid #fff;  cursor: pointer;" class="col-4">
+                    <i class="fa-solid fa-table-cells"></i>
+                </div>
+                <div style="border-right: 1px solid #fff;  cursor: pointer;" class="col-4">
+                    <i class="fa-regular fa-bookmark">
+                    </i>
+                </div>
+                <div style="border-right: 1px solid #fff; cursor: pointer;" class="col-4">
+                    <i class="fa-solid fa-user-tag"></i>
+                </div>
             </div>
+            <hr class=" text-light">
+           <div class="row profilePost">
+                <div class="col-4">
+                    <img src="assets/Photos/Posts/images (1).jpg" alt="">
+                    <img src="assets/Photos/Posts/images (1).jpg" alt="">
+                    <img src="assets/Photos/Posts/images (1).jpg" alt="">
+                    <img src="assets/Photos/Posts/images (1).jpg" alt="">
+                </div>
+                <div class="col-4">
+                    <img src="assets/Photos/Posts/images (3).jpg" alt="">
+                    <img src="assets/Photos/Posts/images (3).jpg" alt="">
+                    <img src="assets/Photos/Posts/images (3).jpg" alt="">
+                    <img src="assets/Photos/Posts/images (1).jpg" alt="">
+
+                </div>
+                <div class="col-4">
+                    <img src="assets/Photos/Posts/images (1).jpg" alt="">
+                    <img src="assets/Photos/Posts/images (1).jpg" alt="">
+                    <img src="assets/Photos/Posts/images (1).jpg" alt="">
+                    <img src="assets/Photos/Posts/images (3).jpg" alt="">
+                </div>
+           </div>
         </div>
-        <hr class="text-light">
-        <div class="wrapper">
-            <div class="chat">
-              <div class="messages"></div>
-              <div class="write" style="z-index: 999;">
-                <input class="input" placeholder="Your message..."/>
-              </div>
-            </div>
-        </div>
-       </div>
     </div>
+
+
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
