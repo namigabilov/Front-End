@@ -25,7 +25,7 @@
                   <li class="navItems">
                       <a href="index.html">
                           <i class="navIcons fa-solid fa-house"></i>
-                      <span class="navs">Home</span>
+                          <span class="navs">Home</span>
                       </a>
                   </li>
                   <li class="navItems">
@@ -125,12 +125,34 @@
             </div>
         </div>
         <hr class="text-light">
-        <div class="wrapper">
-            <div class="chat">
-              <div class="messages"></div>
-              <div class="write" style="z-index: 999;">
-                <input class="input" placeholder="Your message..."/>
-              </div>
+        <div class="chatMobile" style="height: 100vh;">
+            <div class="modal-body ">
+                <div class="msg-body mx-2">
+                    <ul style="margin-left: -22px;">
+                        <li class="sender">
+                            <p>Salam Bu default Gonderilen Mesajdir</p>
+                            <span class="time">10:06 am</span>
+                        </li>
+                        <li class="repaly">
+                            <p>Salam Bu Default Cavab Mesajidir </p>
+                            <span class="time">10:20 am</span>
+                        </li>
+                        <li class="sender">
+                            <p>Salam Bu default Gonderilen Mesajdir</p>
+                            <span class="time">10:06 am</span>
+                        </li>
+                        <li class="repaly">
+                            <p>Salam Bu Default Cavab Mesajidir </p>
+                            <span class="time">10:20 am</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="position: absolute; width: 100%; bottom: 100px;" class="send-box">
+                <form action="">
+                    <input type="text" class="form-control " aria-label="message…" placeholder="Write message…">
+                    <button type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+                </form>
             </div>
         </div>
        </div>
