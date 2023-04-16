@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+ 
   $(".chat-list a").click(function() {
     $(".chatbox").addClass('showbox');
     return false;
@@ -59,3 +60,10 @@ $(".chat-icon").click(function() {
 });
 feather.replace();
 document.querySelector(".nav-item").focus();
+function openNav() {
+  document.getElementById("mySidenav").style.width = "443px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
