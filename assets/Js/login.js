@@ -9,11 +9,11 @@ signInButton.addEventListener('click', () =>
     container.classList.remove('right-panel-active'));  
 
     function goSignIn(e){
-        document.getElementById('logIn').style.display = "none";
-        document.getElementById('signIn').style.display = "block";
+        document.getElementById('logInMobile').style.display = "none";
+        document.getElementById('signInMobile').style.display = "block";
 
     }
     function goLogIn(e){
-        document.getElementById('logIn').style.display = "block";
-        document.getElementById('signIn').style.display = "none";
+        document.getElementById('logInMobile').style.display = "block";
+        document.getElementById('signInMobile').style.display = "none";
     }

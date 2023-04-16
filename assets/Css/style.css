@@ -942,7 +942,21 @@ a.add img {
   -ms-transform: rotate(37deg);
   transform: rotate(37deg);
 }
-
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile + label * {
+  pointer-events: none;
+}
 .msg-body ul li.repaly p {
   color: #fff;
   font-size: 14px;
