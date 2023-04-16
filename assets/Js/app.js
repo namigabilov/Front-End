@@ -61,7 +61,7 @@ $(".chat-icon").click(function() {
 feather.replace();
 document.querySelector(".nav-item").focus();
 function openNav() {
-  document.getElementById("mySidenav").style.width = "443px";
+  document.getElementById("mySidenav").style.width = "400px";
 }
 
 function closeNav() {

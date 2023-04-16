@@ -6,4 +6,14 @@ signUpButton.addEventListener('click', () =>
     container.classList.add('right-panel-active'));
 
 signInButton.addEventListener('click', () =>
-    container.classList.remove('right-panel-active'));
+    container.classList.remove('right-panel-active'));  
+
+    function goSignIn(e){
+        document.getElementById('logIn').style.display = "none";
+        document.getElementById('signIn').style.display = "block";
+
+    }
+    function goLogIn(e){
+        document.getElementById('logIn').style.display = "block";
+        document.getElementById('signIn').style.display = "none";
+    }

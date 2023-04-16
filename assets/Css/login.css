@@ -116,8 +116,23 @@ a {
     min-height: 480px;
     transition: 333ms;
 }
-
-
+.containerMobile{
+    background: #fff;
+    border-radius: 90px;
+    box-shadow: 30px 14px 28px rgba(0, 0, 5, .2), 0 10px 10px rgba(0, 0, 0, .2);
+    position: relative;
+    overflow: hidden;
+    opacity: 85%;
+    width: 400px;
+    min-height: 570px;
+    transition: 333ms;
+}
+.signIn{
+    display: block;
+}
+.logIn{
+    display: none;
+}
 .form-container form {
     background: #fff;
     display: flex;
@@ -160,7 +175,7 @@ a {
     width: 100%;
 }
 .form-container input:hover {
-    transform: scale(101%);
+    transform: scale(105%);
 }
 
 button {
