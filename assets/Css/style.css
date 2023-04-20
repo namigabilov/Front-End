@@ -6,7 +6,7 @@
   font-family: sans-serif;
 }
 #body{
-  background-color: #000000;
+  background-color: #000;
   font-family: "Montserrat", sans-serif;
 }
 .customContainer{
@@ -132,7 +132,7 @@ top: 0;
 bottom: 0;
 width: 250px;
 height: 100%;
-background-color: #000000;
+background-color: #000;
 }
 .sidebar .navigation ul {
 list-style: none;
@@ -239,7 +239,7 @@ font-size: 10px;
   margin-right: 40px;
 }
 .navForSug img{
-  width: 40px;
+  width: 50px;
   height: 50px;
   border-radius: 25px;
   object-fit: cover;
@@ -1263,12 +1263,31 @@ button:focus {
   text-decoration: none;
   color: #ffff;
 }
-
+.fa-video, .fa-phone{
+  cursor: pointer;
+}
+.call-container img{
+  width: 100%;
+  height: 90vh;
+}
+.call-container .actions{
+  position: fixed;
+  top: 80%;
+  left: 53%;
+  transform: translate(-50%,-50%);
+}
+.call-container .actions i{
+  padding: 20px;
+  border-radius: 100%;
+  background-color: red;
+  color: #fff;
+}
 .myProfileContent .myProfilePosts img{
   width: 40vh;
   height: 40vh;
   margin: 0.5px 3px;
   object-fit: center;
+  cursor: pointer;
 }
 .sidenav {
   height: 100%; /* 100% Full-height */

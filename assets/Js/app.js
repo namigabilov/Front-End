@@ -1,5 +1,12 @@
 $( document ).ready(function() {
- 
+ $(".startCall").on('click',function () {
+  $('.chat-modal').addClass('d-none')
+  $('.call-container').removeClass('d-none')
+ })
+ $(".endCall").on('click',function () {
+  $('.chat-modal').removeClass('d-none')
+  $('.call-container').addClass('d-none')
+ })
   $(".chat-list a").click(function() {
     $(".chatbox").addClass('showbox');
     return false;

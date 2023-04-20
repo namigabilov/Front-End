@@ -6,14 +6,18 @@ body {
     background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
     overflow: hidden;
 }
-
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .ocean {
     height: 5%;
     width:100%;
     position:absolute;
     bottom:0;
     left:0;
-    background: #015871;
+    background: #000;
 }
 
 .wave {
@@ -151,7 +155,7 @@ a {
 
 
 .social-container a {
-    border: 1px solid #008ecf;
+    border: 1px solid #000;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -181,8 +185,8 @@ a {
 button {
     border-radius: 50px;
     box-shadow: 0 1px 1px ;
-    border: 1px solid #008ecf;
-    background: #008ecf;
+    border: 1px solid #fff;
+    background: #000;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -238,7 +242,7 @@ button.ghost {
 
 .overlay {
     background: #ff416c;
-    background: linear-gradient(to right, #008ecf, #008ecf) no-repeat 0 0 / cover;
+    background: linear-gradient(to right, #000,#212121 , #000) no-repeat 0 0 / cover;
     color: #fff;
     position: relative;
     left: -100%;
