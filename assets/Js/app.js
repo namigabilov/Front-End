@@ -1,4 +1,27 @@
 $( document ).ready(function() {
+  $('.act').on('click',function(e){
+    e.preventDefault()
+    $('.act').removeClass('activeForSettings')
+    $(this).addClass('activeForSettings')
+
+    if ($(this).hasClass('act1')) {
+      $('.tabSetting').addClass('d-none')
+      $('.editProfile').removeClass('d-none')
+    }
+    if ($(this).hasClass('act2')) {
+      $('.tabSetting').addClass('d-none')
+      $('.changePassword').removeClass('d-none')
+    }
+    if ($(this).hasClass('act3')) {
+      $('.tabSetting').addClass('d-none')
+      $('.securityAndActivity').removeClass('d-none')
+    }
+    if ($(this).hasClass('act4')) {
+      $('.tabSetting').addClass('d-none')
+      $('.help').removeClass('d-none')
+    }
+  })
+
  $(".startCall").on('click',function () {
   $('.chat-modal').addClass('d-none')
   $('.call-container').removeClass('d-none')

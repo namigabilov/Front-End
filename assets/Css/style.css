@@ -1381,7 +1381,6 @@ button:focus {
 }
 .settingContainer .col-9 .editProfile .name input{
   height: 30px;
-  
 }
 .settingContainer .col-9 .editProfile .head img{
   width: 60px;
@@ -1389,4 +1388,40 @@ button:focus {
   margin-right: 25px;
   object-fit: cover;
   border-radius: 100%;
+}
+.settingContainer .col-9 .editProfile{
+  width: 65%;
+}
+.settingContainer .col-9 .editProfile .name textarea{
+  min-height: 30px;
+  width: 66%;
+  margin-left: 5rem;
+}
+.settingContainer .editProfile input{
+  width: 28%;
+  position: absolute;
+  right: 17%;
+} 
+.settingContainer .editProfile select{
+  width: 28%;
+  position: absolute;
+  right: 17%;  
+}
+.settingContainer .changePassword .name{
+  display: flex;
+  align-items: flex-end;
+}
+.settingContainer .changePassword{
+  width: 70%;
+}
+.settingContainer .changePassword input{
+  position: absolute;
+  width: 32%;
+  right: 9%;
+}
+.settingContainer .security .private{
+  display: flex;
+}
+.settingContainer .activity .private{
+  display: flex;
 }
