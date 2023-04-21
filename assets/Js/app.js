@@ -1,4 +1,39 @@
 $( document ).ready(function() {
+  $('.edit').on('click',function(e){
+    e.preventDefault()
+    if($('.editProfile').hasClass('d-none')){
+      $('.editProfile').removeClass('d-none')
+    }else{
+      $('.editProfile').addClass('d-none')
+    }
+  })
+
+  $('.privacyBtn').on('click',function(e){
+    e.preventDefault()
+    if($('.privacy').hasClass('d-none')){
+      $('.privacy').removeClass('d-none')
+    }else{
+      $('.privacy').addClass('d-none')
+    }
+  })
+
+  $('.helpBtn').on('click',function(e){
+    e.preventDefault()
+    if($('.helpTab').hasClass('d-none')){
+      $('.helpTab').removeClass('d-none')
+    }else{
+      $('.helpTab').addClass('d-none')
+    }
+  })
+
+  $('.changePass').on('click',function(e){
+    e.preventDefault()
+    if($('.changePassword').hasClass('d-none')){
+      $('.changePassword').removeClass('d-none')
+    }else{
+      $('.changePassword').addClass('d-none')
+    }
+  })
 
   $('.videoCall').on('click',function (){
       $('.chatMainPage').addClass('d-none')
@@ -7,7 +42,7 @@ $( document ).ready(function() {
   $('.voiceCall').on('click',function (){
     $('.chatMainPage').addClass('d-none')
     $('.callPage').removeClass('d-none')
-})
+  })
 
   $('.endCall').on('click',function (){
       $('.chatMainPage').removeClass('d-none')
