@@ -8,6 +8,15 @@ $( document ).ready(function() {
     }
   })
 
+  $('.verificationBtn').on('click',function(e){
+    e.preventDefault()
+    if($('.verification').hasClass('d-none')){
+      $('.verification').removeClass('d-none')
+    }else{
+      $('.verification').addClass('d-none')
+    }
+  })
+
   $('.privacyBtn').on('click',function(e){
     e.preventDefault()
     if($('.privacy').hasClass('d-none')){
@@ -65,6 +74,10 @@ $( document ).ready(function() {
     if ($(this).hasClass('act3')) {
       $('.tabSetting').addClass('d-none')
       $('.securityAndActivity').removeClass('d-none')
+    }
+    if ($(this).hasClass('act5')) {
+      $('.tabSetting').addClass('d-none')
+      $('.verification').removeClass('d-none')
     }
     if ($(this).hasClass('act4')) {
       $('.tabSetting').addClass('d-none')
