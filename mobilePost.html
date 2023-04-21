@@ -64,7 +64,7 @@
                   <div id="settingTable" class="settingsTab d-none">
                       <ul>
                           <li>
-                              <a href="">
+                              <a href="settings.html">
                                   <span>Settings</span>
                                   <span class="navIcons"><i class="fa-solid fa-gear"></i></span>
                               </a>
@@ -73,12 +73,6 @@
                               <a href="">
                                   <span >Have a Question </span>
                                   <span class="navIcons"><i class="fa-solid fa-question"></i></span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="">
-                                  <span>Switch Accounts</span>
-                                  <span class="navIcons"><i class="fa-solid fa-shuffle"></i></span>
                               </a>
                           </li>
                           <li>
@@ -114,6 +108,9 @@
                         <span >
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat commodi quod dolorem perferendis unde beatae adipisci, expedita quos saepe error fuga fugiat, facilis consectetur, impedit numquam vel dicta asperiores enim?
                         </span>
+                        <form class="my-3" action="">
+                            <input class="form-control bg-dark text-light" placeholder="Add Comment" type="text">
+                        </form>
                     </div>
                     <hr class="text-light">
                     <div class="comments">
@@ -216,7 +213,10 @@
             </a>
             
             <a class="nav-item" href="#">
-                <i class="fa-solid fa-plus"></i><span>New Post</span>
+                <input type="file" name="file" id="file" class="inputfile">
+                <label for="file">
+                    <i class="fa-solid fa-plus"></i>
+                </label>
             </a>
 
             <a class="nav-item" href="activty.html">
@@ -249,10 +249,13 @@
                         <i class="fa-regular fa-bookmark savePost"></i>
                     </div>
                 </div>  
-                <div class="text-light mx-4">
+                <div class="text-light mx-1">
                     <span>135 Likes</span>
                     <p class="">Description here</p>
                     <p class=""><span>12</span> Comments</p>
+                    <form action="">
+                        <input placeholder="Add Comment" class="form-control bg-dark text-light" type="text">
+                    </form>
                 </div>
                 <div class="comments">
                     <div class="comment text-light">

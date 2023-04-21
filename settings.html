@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tenslog</title>
 </head>
-<body id="body"> 
+<body id="body" class="settingsBody"> 
     <div class="desktop">
         <div class="sidebar">
             <div class="m-4">
@@ -62,7 +62,7 @@
                   <div id="settingTable" class="settingsTab d-none">
                       <ul>
                           <li>
-                              <a href="">
+                              <a href="settings.html">
                                   <span>Settings</span>
                                   <span class="navIcons"><i class="fa-solid fa-gear"></i></span>
                               </a>
@@ -73,12 +73,7 @@
                                   <span class="navIcons"><i class="fa-solid fa-question"></i></span>
                               </a>
                           </li>
-                          <li>
-                              <a href="">
-                                  <span>Switch Accounts</span>
-                                  <span class="navIcons"><i class="fa-solid fa-shuffle"></i></span>
-                              </a>
-                          </li>
+
                           <li>
                               <a href="login-register.html">
                                   <span>Log Out</span>
@@ -106,7 +101,7 @@
                             <span>This Social Media was made by a student for the test phase</span>
                         </div>
                         <div class="bottom">
-                            <div class="act act1 p-3 ">
+                            <div class="act act1 p-3 activeForSettings">
                                 <a href="">Edit Profile</a>
                             </div>
                             <div class="act act2 p-3 ">
@@ -115,16 +110,16 @@
                             <div class="act act3 p-3 ">
                                 <a href="">Privacy and security</a>
                             </div>
-                            <div class="act act4 p-3 activeForSettings">
+                            <div class="act act4 p-3 ">
                                 <a href="">Help</a>
                             </div>
                             <div class="p-3">
-                                <a style="text-decoration: none;" class="text-danger" href="">Log Out</a>
+                                <a style="text-decoration: none;" class="text-danger" href="login-register.html">Log Out</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-9 p-5">
-                        <div class="tabSetting editProfile d-none">
+                        <div class="tabSetting editProfile">
                             <form action="">
                                 <div class="head">
                                     <img src="assets/Photos/ProfilePhotos/download.jpg" alt="">
@@ -191,26 +186,29 @@
                             </div>
                         </div>
                         <div class="tabSetting securityAndActivity d-none">
-                            <div class="security">
-                                <h4>Account privacy</h4>
-                                <div class="private my-4">
-                                    <input class="form-check" type="checkbox" name="" id="">
-                                    <span class="mx-3">Private account</span>
+                            <form action="">
+                                <div class="security">
+                                    <h4>Account privacy</h4>
+                                    <div class="private my-4">
+                                        <input class="form-check" type="checkbox" name="" id="">
+                                        <span class="mx-3">Private account</span>
+                                    </div>
+                                    <p style="margin: 0;">When your account is public, your profile and posts can be seen by anyone, on or off Tenslog, even if they don’t have an Tenslog account.</p><br>
+                                    <p>When your account is private, only the followers you approve can see what you share, including your photos or videos on hashtag and location pages, and your followers and following lists.</p>
+                                    <hr class="text-light">
                                 </div>
-                                <p style="margin: 0;">When your account is public, your profile and posts can be seen by anyone, on or off Tenslog, even if they don’t have an Tenslog account.</p><br>
-                                <p>When your account is private, only the followers you approve can see what you share, including your photos or videos on hashtag and location pages, and your followers and following lists.</p>
-                                <hr class="text-light">
-                            </div>
-                            <div class="activity">
-                                <h4>Activity Status</h4>
-                                <div class="private my-4">
-                                    <input class="form-check" type="checkbox" name="" id="">
-                                    <span class="mx-3">Show Activity Status</span>
+                                <div class="activity">
+                                    <h4>Activity Status</h4>
+                                    <div class="private my-4">
+                                        <input class="form-check" type="checkbox" name="" id="">
+                                        <span class="mx-3">Show Activity Status</span>
+                                    </div>
+                                    <p style="margin: 0;">Allow accounts you follow and anyone you message to see when you were last active or are currently active on Instagram apps. When this is turned off, you won't be able to see the Activity Status of other accounts.</p>
                                 </div>
-                                <p style="margin: 0;">Allow accounts you follow and anyone you message to see when you were last active or are currently active on Instagram apps. When this is turned off, you won't be able to see the Activity Status of other accounts.</p>
-                            </div>
+                                <button type="submit" class="btn btn-primary my-3">Save</button>
+                            </form>
                         </div>
-                        <div class="tabSetting help">
+                        <div class="tabSetting help d-none">
                             <h4>Help</h4>
                             <p>Please provide detailed information about the problem you are experiencing in writing. You will be contacted as soon as possible. Sincerely, Tenslog.</p>
                             <form action="">
@@ -289,7 +287,10 @@
             </a>
             
             <a class="nav-item" href="#">
-                <i class="fa-solid fa-plus"></i><span>New Post</span>
+                <input type="file" name="file" id="file" class="inputfile">
+                <label for="file">
+                    <i class="fa-solid fa-plus"></i>
+                </label>
             </a>
 
             <a class="nav-item" href="activty.html">
@@ -429,7 +430,7 @@
             <hr class="text-light">
             </div>
             <div class="help"></div>
-            <a href="">
+            <a href="login-register.html">
                 <div class="help mx-3 text-danger">
                     Log Out
                 </div>

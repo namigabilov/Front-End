@@ -63,7 +63,7 @@
                   <div id="settingTable" class="settingsTab d-none">
                       <ul>
                           <li>
-                              <a href="">
+                              <a href="settings.html">
                                   <span>Settings</span>
                                   <span class="navIcons"><i class="fa-solid fa-gear"></i></span>
                               </a>
@@ -72,12 +72,6 @@
                               <a href="">
                                   <span >Have a Question </span>
                                   <span class="navIcons"><i class="fa-solid fa-question"></i></span>
-                              </a>
-                          </li>
-                          <li>
-                              <a href="">
-                                  <span>Switch Accounts</span>
-                                  <span class="navIcons"><i class="fa-solid fa-shuffle"></i></span>
                               </a>
                           </li>
                           <li>
@@ -103,7 +97,6 @@
                         <div class="top">
                             <strong>username</strong>
                             <button class="btn btn-light mx-4" >Edit Profile</button>
-                            <i class="fa-solid fa-gear"></i>
                         </div>
                         <div class="postInfo my-4">
                             <div class="line">
@@ -223,7 +216,10 @@
             </a>
             
             <a class="nav-item" href="#">
-                <i class="fa-solid fa-plus"></i><span>New Post</span>
+                <input type="file" name="file" id="file" class="inputfile">
+                <label for="file">
+                    <i class="fa-solid fa-plus"></i>
+                </label>
             </a>
 
             <a class="nav-item" href="activty.html">
@@ -262,15 +258,11 @@
             </div>
             <hr class=" text-light">
             <div class="row text-light text-center">
-                <div style="border-right: 1px solid #fff;  cursor: pointer;" class="col-4">
+                <div style="border-right: 1px solid #fff;  cursor: pointer;" class="col-6">
                     <i class="fa-solid fa-table-cells"></i>
                 </div>
-                <div style="border-right: 1px solid #fff;  cursor: pointer;" class="col-4">
-                    <i class="fa-regular fa-bookmark">
-                    </i>
-                </div>
-                <div style="border-right: 1px solid #fff; cursor: pointer;" class="col-4">
-                    <i class="fa-solid fa-user-tag"></i>
+                <div style="cursor: pointer;" class="col-6">
+                    <i class="fa-regular fa-bookmark"></i>
                 </div>
             </div>
             <hr class=" text-light">

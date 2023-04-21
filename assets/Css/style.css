@@ -1499,3 +1499,6 @@ button:focus {
 .privacy p{
   opacity: 0.5;
 }
+#body::-webkit-scrollbar{
+  display: none;
+}
