@@ -1,4 +1,19 @@
 $( document ).ready(function() {
+
+  $('.videoCall').on('click',function (){
+      $('.chatMainPage').addClass('d-none')
+      $('.callPage').removeClass('d-none')
+  })
+  $('.voiceCall').on('click',function (){
+    $('.chatMainPage').addClass('d-none')
+    $('.callPage').removeClass('d-none')
+})
+
+  $('.endCall').on('click',function (){
+      $('.chatMainPage').removeClass('d-none')
+      $('.callPage').addClass('d-none')
+  })
+
   $('.act').on('click',function(e){
     e.preventDefault()
     $('.act').removeClass('activeForSettings')
