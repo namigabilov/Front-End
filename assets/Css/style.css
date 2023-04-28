@@ -1276,6 +1276,9 @@ button:focus {
   background-color: red;
   color: #fff;
 }
+.myProfileContent .myProfilePosts a{
+  display: contents;
+}
 .myProfileContent .myProfilePosts img{
   width: 40vh;
   height: 40vh;
@@ -1501,4 +1504,15 @@ button:focus {
 }
 #body::-webkit-scrollbar{
   display: none;
+}
+.chatListUser{
+  display: flex;
+  align-items: center;
+  text-decoration:none;
+  margin-top: 15px;
+}
+.chatListUser img{
+  width: 23%;
+  margin-right:7px ;
+  border-radius: 100%;
 }
